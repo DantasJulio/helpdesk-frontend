@@ -1,1 +1,35 @@
-<p>IMPLEMENTEI O NAV</p>
+<mat-drawer-container class="container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="side">
+        <img src="/project/src/assets/img/servide-desk-help-desk.webp" alt="Imagem HELPDESK">
+        <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">home</i>
+                Home
+            </a>
+            <hr size="1">>
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">account_circle</i>
+                Técnicos
+            </a>
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">person</i>
+                Clientes
+            </a>
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">code</i>
+                Github
+            </a>
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">logout</i>
+                Logout
+            </a>
+        </mat-nav-list>
+    </mat-drawer>
+  
+    <div class="sidenav-content">
+      <button class="menu mat-elevation-z8" mat-icon-button (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+  
+  </mat-drawer-container>
