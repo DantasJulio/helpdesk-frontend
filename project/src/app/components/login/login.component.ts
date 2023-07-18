@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
 import { Credenciais } from 'src/app/models/credenciais';
 
 @Component({
@@ -17,8 +18,16 @@ export class LoginComponent implements OnInit{
   email = new FormControl(null, Validators.email);
   senha = new FormControl(null, Validators.minLength(8));
 
+  constructor(private toastr: ToastrService) {
+
+  }
+
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+  }
+
+  logar() {
+    this.toastr.error('Usuário e/ou senha inválidos.');
+    this.creds.senha = '';
   }
 
   validaCampos(): boolean {

@@ -31,7 +31,11 @@
                     matInput placeholder="Digite sua senha...">
         </mat-form-field>
 
-        <button [disabled]="!validaCampos()" class="full-width mat-elevation-z4" mat-raised-button>Login</button>
+        <button
+            (click)="logar()" 
+            [disabled]="!validaCampos()" 
+            class="full-width mat-elevation-z4" 
+            mat-raised-button>Login</button>
     </form>               
 </div>
 
