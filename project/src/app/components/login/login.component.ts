@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit{
   }
 
   logar() {
-    this.toastr.error('Usuário e/ou senha inválidos.');
+    this.toastr.success("");
     this.creds.senha = '';
   }
 

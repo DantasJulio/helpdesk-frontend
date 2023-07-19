@@ -5,17 +5,14 @@
    background: black;
    display: flex;
    align-items: center;
+   flex-direction: column;
    justify-content: center;
-   background: linear-gradient(180deg, rgba(2,0,36,1) 48%, rgba(143,117,208,0.8071603641456583) 92%, rgba(0,108,255,1) 100%);}
-
-.container:hover{
-  background-color: rgba(0, 255, 255, 0.39);
-}
+  }
 
 .form {
   width: 30rem;
   margin: auto;
-  background-color: rgb(235, 235, 235);
+  background-color: white;
   padding: 4rem 1rem;
   border-radius: 1rem;
 }
@@ -86,5 +83,16 @@
   }
 }
 
+.headerWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+img {
+  height: 15rem;
+  width: 25rem;
+}
 
   

@@ -1,18 +1,22 @@
-<h1 class="header">
-    <div class="container2">
-        <ul class="dinamico">
-            <li><span>Bem-vindo!</span></li>
-            <li><span>Bienvenido!</span></li>
-            <li><span>Willkommen!</span></li>
-            <li><span>Welcome!</span></li>
-            <li><span>Accueillir!</span></li>
-            <li><span>Benvenuto!</span></li>
-        </ul>
-    </div>
 
-</h1>
 <div class="container">
+    <div class="headerWrapper">
+        <h1 class="header">
+            <div class="container2">
+                <ul class="dinamico">
+                    <li><span>Bem-vindo!</span></li>
+                    <li><span>Bienvenido!</span></li>
+                    <li><span>Willkommen!</span></li>
+                    <li><span>Welcome!</span></li>
+                    <li><span>Accueillir!</span></li>
+                    <li><span>Benvenuto!</span></li>
+                </ul>
+            </div>
+        
+        </h1>
+    </div>
     <form class="form mat-elevation-z8">
+        <img src="./../../../assets/img/cloud-computing-modern-flat-concept-for-web-banner-design-man-enters-password-and-login-to-access-cloud-storage-for-uploading-and-processing-files-illustration-with-isolated-people-scene-free-vector.svg" alt="Foto">
         <h1>Informe suas credenciais:</h1>
 
         <mat-form-field class="full-width">
@@ -31,11 +35,15 @@
                     matInput placeholder="Digite sua senha...">
         </mat-form-field>
 
-        <button
-            (click)="logar()" 
-            [disabled]="!validaCampos()" 
-            class="full-width mat-elevation-z4" 
-            mat-raised-button>Login</button>
+        <a mat-list-item routerLink="home">
+            <button
+                (click)="logar()"
+                [disabled]="!validaCampos()" 
+                class="full-width mat-elevation-z4" 
+                mat-raised-button>Login
+            </button>
+        </a>
+
     </form>               
 </div>
 
