@@ -34,16 +34,12 @@
                     [(ngModel)]="creds.senha" name="senha" type="password" 
                     matInput placeholder="Digite sua senha...">
         </mat-form-field>
-
-        <a mat-list-item routerLink="home">
             <button
                 (click)="logar()"
                 [disabled]="!validaCampos()" 
                 class="full-width mat-elevation-z4" 
                 mat-raised-button>Login
             </button>
-        </a>
-
     </form>               
 </div>
 

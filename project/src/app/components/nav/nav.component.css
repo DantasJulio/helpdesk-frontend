@@ -9,12 +9,9 @@
 
 .sidenav i {
     margin-right: 0.5rem;
+    margin-top: 1rem;
+    color: #111111;
 }
-
-.sidenav a {
-  color: white;
-}
-
 
 .menu {
     margin: 1rem 0 0 1rem;
